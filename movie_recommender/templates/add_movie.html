@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Добавить новый фильм</h1>
+
+<form method="POST">
+    <label for="title">Название фильма:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="genre">Жанр:</label>
+    <input type="text" id="genre" name="genre" required>
+
+    <label for="year">Год:</label>
+    <input type="number" id="year" name="year" required>
+
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description" required></textarea>
+
+    <label for="language">Язык:</label>
+    <input type="text" id="language" name="language" required>
+
+    <button type="submit">Добавить фильм</button>
+</form>
+{% endblock %}

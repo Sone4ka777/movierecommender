@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Случайный фильм</h1>
+
+<p>Рекомендуем вам посмотреть:</p>
+<p><strong>{{ movie.title }}</strong> ({{ movie.year }})<br>
+Рейтинг: {{ movie.rating }}<br>
+Описание: {{ movie.description }}</p>
+{% endblock %}
